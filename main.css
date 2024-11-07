@@ -1,17 +1,26 @@
 body {
+    background-color: #1a1a1a;
+    color: #e0e0e0;
     font-family: 'Arial', sans-serif;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-image: url(./img/imagem6.webp);
+  /* background-repeat: calc();
+    background-position: center center;
+    align-items: center;
+    height: 100vh;
+    margin: 0; */
 }
  
 .container {
-    max-width: 400px;
-    margin: auto;
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #2a2a2a;
+    padding: 10px;
+    padding-left: 200px;
+    padding-right: 200px;
+    border-radius: 80px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    width: 300px;
+    text-align: center;
     transition: transform 0.3s;
 }
  
@@ -19,52 +28,67 @@ body {
     transform: scale(1.02);
 }
  
-h1 {
+.header h1 {
     font-size: 24px;
-    margin-bottom: 15px;
-    color: #007BFF;
-    text-align: center;
+    margin-bottom: 200px;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
 }
  
-label {
-    display: block;
-    margin-bottom: 5px;
-    color: #333;
+.input-group, .select-group, .button-group, .result-group {
+    margin: 10px 0;
 }
  
-.form-control {
-    width: 95%;
+.input-group{
+    width: 300px;
+}
+ 
+input, select {
+    width: 100%;
     padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ddd;
+    border: 1px solid #444;
     border-radius: 4px;
-    transition: border-color 0.3s, box-shadow 0.3s;
+    background-color: #333;
+    color: #e0e0e0;
+    transition: background-color 0.3s;
 }
  
-.form-control:focus {
-    border-color: #007BFF;
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+input:focus, select:focus {
+    background-color: #444;
     outline: none;
 }
  
 button {
-    width: 100%;
-    background-color: #007BFF;
+    background-color: #202020;
     color: white;
     border: none;
     padding: 10px;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 16px;
+    width: 100%;
     transition: background-color 0.3s, transform 0.2s;
 }
  
 button:hover {
-    background-color: #0056b3;
+    background-color: #121412;
     transform: scale(1.05);
 }
  
-button:disabled {
-    background-color: #ccc;
-    cursor: not-allowed;
+.result-group h2 {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #131813;
 }
+.currency-input {
+    display: flex;
+    align-items: center;
+}
+ 
+#currencySymbol {
+    margin-right: 5px;
+    font-size: 25px;  
+}
+ 
+p{
+   text-align: left;
+}
+   
